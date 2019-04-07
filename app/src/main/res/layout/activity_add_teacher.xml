@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteBackground"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whiteBackground"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:onClick="backButtonClicked"
+                android:padding="16dp"
+                android:src="@drawable/ic_arrow_back_accent_24dp" />
+
+            <TextView
+                android:id="@+id/tvTitleLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="16dp"
+                android:text="Add Teacher"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/headline_text_size_regular" />
+
+            <ImageView
+                android:id="@+id/ivSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:padding="16dp"
+                android:onClick="saveButtonClicked"
+                android:src="@drawable/ic_done_accent_24dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvBasicDetailsLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whiteLightBackground"
+            android:padding="16dp"
+            android:text="Basic details"
+            android:textColor="@color/textDarkSecondary"
+            android:textSize="@dimen/body1_text_size_regular" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civTeacherImage"
+            android:layout_width="@dimen/large_circular_image_view"
+            android:layout_height="@dimen/large_circular_image_view"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:onClick="addImageClicked"
+            app:civ_circle_background_color="@color/whiteLightBackground"
+            android:src="@drawable/ic_person_black_24dp"
+            app:civ_border_color="@color/colorPrimary"
+            app:civ_border_width="1dp" />
+
+        <TextView
+            android:id="@+id/tvTeacherNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Teacher name *"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/body1_text_size_regular" />
+
+        <EditText
+            android:id="@+id/etTeacherName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@android:color/transparent"
+            android:hint="Enter teacher name"
+            android:inputType="text"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:textColor="@color/textDarkPrimary"
+            android:textColorHint="@color/textDarkSecondary"
+            android:textSize="@dimen/subheading_text_size_regular" />
+
+        <TextView
+            android:id="@+id/tvPhoneNumberLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Phone number *"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/body1_text_size_regular" />
+
+        <EditText
+            android:id="@+id/etPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@android:color/transparent"
+            android:hint="Enter phone number"
+            android:inputType="text"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:textColor="@color/textDarkPrimary"
+            android:textColorHint="@color/textDarkSecondary"
+            android:textSize="@dimen/subheading_text_size_regular" />
+
+        <TextView
+            android:id="@+id/tvEmailLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Email"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/body1_text_size_regular" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@android:color/transparent"
+            android:hint="Enter email"
+            android:inputType="text"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:textColor="@color/textDarkPrimary"
+            android:textColorHint="@color/textDarkSecondary"
+            android:textSize="@dimen/subheading_text_size_regular" />
+
+        <TextView
+            android:id="@+id/tvGenderLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Gender"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/body1_text_size_regular" />
+
+        <TextView
+            android:id="@+id/tvSelectGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@android:color/transparent"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="Select gender"
+            android:textColor="@color/textDarkPrimary"
+            android:textColorHint="@color/textDarkSecondary"
+            android:textSize="@dimen/subheading_text_size_regular" />
+
+        <TextView
+            android:id="@+id/tvDOBLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Date of birth"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/body1_text_size_regular" />
+
+        <TextView
+            android:id="@+id/tvSelectDOB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@android:color/transparent"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="Select DOB"
+            android:textColor="@color/textDarkPrimary"
+            android:textColorHint="@color/textDarkSecondary"
+            android:textSize="@dimen/subheading_text_size_regular" />
+
+        <TextView
+            android:id="@+id/tvAddressLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Address"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/body1_text_size_regular" />
+
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@android:color/transparent"
+            android:hint="Enter address"
+            android:inputType="textCapCharacters"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:textColor="@color/textDarkPrimary"
+            android:textColorHint="@color/textDarkSecondary"
+            android:textSize="@dimen/subheading_text_size_regular" />
+
+        <TextView
+            android:id="@+id/tvInstituteDetailsLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whiteLightBackground"
+            android:padding="16dp"
+            android:text="Institute details"
+            android:textColor="@color/textDarkSecondary"
+            android:textSize="@dimen/body1_text_size_regular" />
+
+        <TextView
+            android:id="@+id/tvTeacherCodeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Teacher code *"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/body1_text_size_regular" />
+
+        <EditText
+            android:id="@+id/etTeacherCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@android:color/transparent"
+            android:hint="Enter teacher code"
+            android:inputType="textCapCharacters"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:textColor="@color/textDarkPrimary"
+            android:textColorHint="@color/textDarkSecondary"
+            android:textSize="@dimen/subheading_text_size_regular" />
+
+        <TextView
+            android:id="@+id/tvTeacherPositionLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Teacher position"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/body1_text_size_regular" />
+
+        <EditText
+            android:id="@+id/etTeacherPosition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@android:color/transparent"
+            android:hint="Enter teacher position"
+            android:inputType="textCapCharacters"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:textColor="@color/textDarkPrimary"
+            android:textColorHint="@color/textDarkSecondary"
+            android:textSize="@dimen/subheading_text_size_regular" />
+
+        <TextView
+            android:id="@+id/tvCoursesLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Courses *"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/body1_text_size_regular" />
+
+        <TextView
+            android:id="@+id/tvSelectCourses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@android:color/transparent"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="Select courses"
+            android:textColor="@color/textDarkPrimary"
+            android:textColorHint="@color/textDarkSecondary"
+            android:textSize="@dimen/subheading_text_size_regular" />
+
+        <TextView
+            android:id="@+id/tvAccessRightsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Access rights *"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/body1_text_size_regular" />
+
+        <TextView
+            android:id="@+id/tvSelectAccessRights"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@android:color/transparent"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="Select access rights"
+            android:textColor="@color/textDarkPrimary"
+            android:textColorHint="@color/textDarkSecondary"
+            android:textSize="@dimen/subheading_text_size_regular" />
+
+        <TextView
+            android:id="@+id/tvAdditionalDetailsLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whiteLightBackground"
+            android:padding="16dp"
+            android:text="Additional details"
+            android:textColor="@color/textDarkSecondary"
+            android:textSize="@dimen/body1_text_size_regular" />
+
+        <TextView
+            android:id="@+id/tvOtherInformationLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Other information"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/body1_text_size_regular" />
+
+        <EditText
+            android:id="@+id/etOtherInformation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@android:color/transparent"
+            android:hint="Enter other information"
+            android:inputType="numberDecimal"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:textColor="@color/textDarkPrimary"
+            android:textColorHint="@color/textDarkSecondary"
+            android:textSize="@dimen/subheading_text_size_regular" />
+
+    </LinearLayout>
+
+</ScrollView>

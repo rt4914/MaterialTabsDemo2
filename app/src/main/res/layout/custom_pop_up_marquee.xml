@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tvMarqueeLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:text="Marquee/News"
+            android:textColor="@color/white"
+            android:textSize="@dimen/subheading_text_size_regular" />
+
+        <ImageView
+            android:id="@+id/ivClosePopUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:src="@drawable/ic_close_white_24dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvMarqueeDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Marquee text will be visible to all users across all applications."
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/body1_text_size_regular" />
+
+    <EditText
+        android:id="@+id/etMarquee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@android:color/transparent"
+        android:hint="Enter marquee/news"
+        android:inputType="text"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:textColor="@color/textDarkPrimary"
+        android:textColorHint="@color/textDarkSecondary"
+        android:textSize="@dimen/subheading_text_size_regular" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bClear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:padding="8dp"
+            android:text="CLEAR"
+            android:textColor="@color/white"
+            android:textSize="@dimen/body1_text_size_regular" />
+
+        <Button
+            android:id="@+id/bSave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:padding="8dp"
+            android:text="SAVE"
+            android:textColor="@color/white"
+            android:textSize="@dimen/body1_text_size_regular" />
+
+    </LinearLayout>
+
+</LinearLayout>

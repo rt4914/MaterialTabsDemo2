@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="text_size_medium">18sp</dimen>
+
+    <dimen name="button_text_size_medium">14sp</dimen>
+    <dimen name="caption_text_size_regular">12sp</dimen>
+    <dimen name="body1_text_size_regular">14sp</dimen>
+    <dimen name="body2_text_size_medium">14sp</dimen>
+    <dimen name="subheading_text_size_regular">16sp</dimen>
+    <dimen name="title_text_size_medium">20sp</dimen>
+    <dimen name="headline_text_size_regular">24sp</dimen>
+    <dimen name="display1_text_size_regular">34sp</dimen>
+    <dimen name="display2_text_size_regular">45sp</dimen>
+    <dimen name="display3_text_size_regular">56sp</dimen>
+    <dimen name="display4_text_size_light">112sp</dimen>
+
+    <dimen name="card_elevation">2dp</dimen>
+    <dimen name="card_corner_radius">2dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+    <dimen name="evaluation_box_size">36dp</dimen>
+    <dimen name="evaluation_text_size">16sp</dimen>
+    <dimen name="evaluation_margin">2dp</dimen>
+
+    <dimen name="item_main_square_card_width">100dp</dimen>
+    <dimen name="item_main_square_card_height">100dp</dimen>
+    <dimen name="item_main_square_card_corner_radius">4dp</dimen>
+    <dimen name="item_main_square_card_elevation">4dp</dimen>
+    <dimen name="item_main_square_card_image">54dp</dimen>
+    <dimen name="default_margin_four">32dp</dimen>
+    <dimen name="square_card_document">100dp</dimen>
+
+    <dimen name="circle_image_border_width">1dp</dimen>
+
+    <dimen name="default_margin_double">16dp</dimen>
+    <dimen name="default_margin">8dp</dimen>
+    <dimen name="default_margin_half">4dp</dimen>
+    <dimen name="default_padding_double">16dp</dimen>
+    <dimen name="default_padding">8dp</dimen>
+    <dimen name="default_padding_half">4dp</dimen>
+
+    <!--activity_add_student.xml-->
+    <dimen name="add_student_profile_image">80dp</dimen>
+    <dimen name="add_student_profile_image_margin">8dp</dimen>
+    <dimen name="add_student_student_card_margin">16dp</dimen>
+    <dimen name="add_student_student_card_padding">4dp</dimen>
+    <dimen name="add_student_icon_size">24dp</dimen>
+
+    <!--item_attendance_image.xml-->
+    <dimen name="item_attendance_camera">64dp</dimen>
+    <dimen name="item_attendance_close">20dp</dimen>
+
+    <!--item_attendance_student.xml-->
+    <dimen name="item_attendance_student_view">4dp</dimen>
+    <dimen name="item_attendance_student_image">48dp</dimen>
+    <dimen name="item_attendance_student_status_icon_size">24dp</dimen>
+
+    <!--item_course_attendance.xml-->
+    <dimen name="item_course_attendance_course_book_icon_size">36dp</dimen>
+
+    <!--single_cell_layout.xml-->
+    <dimen name="date_text_view_size">24dp</dimen>
+
+    <!--calendar_layout.xml-->
+    <dimen name="calendar_layout_arrow_icon_size">24dp</dimen>
+
+    <dimen name="attendance_status_dot_size">16dp</dimen>
+
+    <dimen name="message_options_size">36dp</dimen>
+    <dimen name="student_image_size_default">64dp</dimen>
+
+    <!--Slider Card Recycler View-->
+    <dimen name="recycler_view_left_offset">0dp</dimen>
+    <dimen name="left_offset">61dp</dimen>
+    <dimen name="card_width">280dp</dimen>
+    <dimen name="card_corner_radius_2">10dp</dimen>
+
+    <dimen name="large_circular_image_view">96dp</dimen>
+
+</resources>

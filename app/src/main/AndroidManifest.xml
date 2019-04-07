@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.advanced.education.admin.wisel">
+
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AddCourseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AddStandardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AddTeacherActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AddStudentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SelectMediaActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name=".activity.SelectCourseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SelectStandardActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.CourseListActivity" />
+        <activity
+            android:name=".activity.SelectTeacherActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.StandardListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.StudentListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TeacherListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SelectStudentActivity"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="@string/photo_uri"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".activity.SelectAccessRightsActivity" />
+        <activity android:name=".activity.BannerListActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@drawable/side_nav_bar"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civTeacherImage"
+        android:layout_width="@dimen/item_attendance_student_image"
+        android:layout_height="@dimen/item_attendance_student_image"
+        android:src="@drawable/ic_person_white_24dp"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="1dp" />
+
+    <TextView
+        android:id="@+id/tvTeacherName"
+        style="@style/TextViewStudentName"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:text="RAJAT TALESRA"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tvTeacherEmail"
+        style="@style/TextViewStudentRollNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="rajat@gmail.com"
+        android:textColor="@color/white" />
+
+</LinearLayout>

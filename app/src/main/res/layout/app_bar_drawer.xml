@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteBackground">
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/toolbar_teacher" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivBanner"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:onClick="onBannerClicked"
+                android:scaleType="center" />
+
+            <TextView
+                android:id="@+id/tvMarquee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:ellipsize="marquee"
+                android:fadingEdge="horizontal"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:onClick="marqueeButtonClicked"
+                android:padding="16dp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="@string/marquee_sample_text"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tvAnalyticsLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/whiteLightBackground"
+                android:padding="16dp"
+                android:text="Analytics"
+                android:textColor="@color/textDarkSecondary"
+                android:textSize="@dimen/body1_text_size_regular" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:gravity="center"
+                    android:onClick="courseButtonClicked"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/tvCourseCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12"
+                        android:textColor="@color/asw_orange_01"
+                        android:textSize="@dimen/display3_text_size_regular" />
+
+                    <TextView
+                        android:id="@+id/tvCoursesLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Courses"
+                        android:textColor="@color/asw_orange_01"
+                        android:textSize="@dimen/subheading_text_size_regular" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:gravity="center"
+                    android:onClick="standardButtonClicked"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/tvStandardCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5"
+                        android:textColor="@color/asw_pink_01"
+                        android:textSize="@dimen/display3_text_size_regular" />
+
+                    <TextView
+                        android:id="@+id/tvStandardsLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Standards"
+                        android:textColor="@color/asw_pink_01"
+                        android:textSize="@dimen/subheading_text_size_regular" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:gravity="center"
+                    android:onClick="studentButtonClicked"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/tvStudentCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="120"
+                        android:textColor="@color/asw_yellow_02"
+                        android:textSize="@dimen/display3_text_size_regular" />
+
+                    <TextView
+                        android:id="@+id/tvStudentsLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Students"
+                        android:textColor="@color/asw_yellow_02"
+                        android:textSize="@dimen/subheading_text_size_regular" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:gravity="center"
+                    android:onClick="teacherButtonClicked"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/tvTeacherCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10"
+                        android:textColor="@color/asw_purple_01"
+                        android:textSize="@dimen/display3_text_size_regular" />
+
+                    <TextView
+                        android:id="@+id/tvTeachersLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Teachers"
+                        android:textColor="@color/asw_purple_01"
+                        android:textSize="@dimen/subheading_text_size_regular" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvAccountUsage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/whiteLightBackground"
+                android:padding="16dp"
+                android:text="Account usage"
+                android:textColor="@color/textDarkSecondary"
+                android:textSize="@dimen/body1_text_size_regular" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/tvSMSPackLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:text="SMS Pack"
+                    android:textColor="@color/textDarkPrimary"
+                    android:textSize="@dimen/subheading_text_size_regular" />
+
+                <TextView
+                    android:id="@+id/tvSMSPack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="263/1000"
+                    android:textColor="@color/textDarkPrimary"
+                    android:textSize="@dimen/subheading_text_size_regular" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/tvStorageLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:text="Storage"
+                    android:textColor="@color/textDarkPrimary"
+                    android:textSize="@dimen/subheading_text_size_regular" />
+
+                <TextView
+                    android:id="@+id/tvStorage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="2.5/10 GB"
+                    android:textColor="@color/textDarkPrimary"
+                    android:textSize="@dimen/subheading_text_size_regular" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/whiteLightBackground"
+                android:orientation="vertical"
+                android:paddingBottom="64dp"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:paddingTop="64dp">
+
+                <TextView
+                    android:id="@+id/tvFooterLabel1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="For better education"
+                    android:textColor="@color/textDarkDisabled"
+                    android:textSize="@dimen/subheading_text_size_regular" />
+
+                <TextView
+                    android:id="@+id/tvFooterLabel2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Created by"
+                    android:textColor="@color/textDarkDisabled"
+                    android:textSize="@dimen/subheading_text_size_regular" />
+
+                <TextView
+                    android:id="@+id/tvFooterLabel3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WiseL"
+                    android:textColor="@color/textDarkDisabled"
+                    android:textSize="@dimen/display3_text_size_regular" />
+
+                <TextView
+                    android:id="@+id/tvFooterLabel4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Keycard Technologies Pvt Ltd"
+                    android:textColor="@color/textDarkDisabled"
+                    android:textSize="@dimen/subheading_text_size_regular" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabAddOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        android:onClick="fabAddOptionsClicked"
+        android:src="@drawable/ic_add_white_24dp"
+        app:fabSize="normal" />
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0E3746</color>
+    <color name="colorPrimaryDark">#0E3746</color>
+    <color name="colorAccent">#BE2623</color>
+
+    <color name="whiteBackground">#FFFFFF</color>
+    <color name="whiteLightBackground">#F8F8F8</color>
+    <color name="background1">#F4F2EC</color>
+    <color name="background2">#EAE8DC</color>
+
+    <color name="transparency_image">#66000000</color>
+    <color name="complete_transparency_image">#00000000</color>
+
+    <color name="transparent_black">#aa000000</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#dddddd</color>
+
+    <color name="divider">#d2d2d2</color>
+
+    <!-- Dark Text Color for Light Background -->
+    <color name="textDarkPrimary">#DE000000</color> <!--DE for %87 opacity-->
+    <color name="textDarkSecondary">#8A000000</color> <!--8A for %54 opacity-->
+    <color name="textDarkDisabled">#61000000</color> <!--61 for %38 opacity-->
+
+
+    <color name="asw_pink_01">#F375b5</color>
+    <color name="asw_yellow_01">#FCD783</color>
+    <color name="asw_pink_02">#FF92A9</color>
+    <color name="asw_yellow_02">#FED361</color>
+    <color name="asw_purple_01">#816AD6</color>
+    <color name="asw_blue_01">#2B92E4</color>
+    <color name="asw_brown_01">#413043</color>
+    <color name="asw_orange_01">#DA694B</color>
+
+</resources>
