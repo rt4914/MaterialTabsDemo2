@@ -1,6 +1,6 @@
 <resources>
 
-    <string name="app_name">100Cent Admin</string>
+    <string name="app_name">Line Balancing</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -19,7 +19,14 @@
     <string name="privacyPolicy">By signing in, you agree to our <a href="https://www.wisel.in/terms_and_conditions.html">Terms and Conditions</a> and <a href="https://www.wisel.in/privacy_policy.html">Privacy Policy</a></string>
     <string name="title_activity_settings">Settings</string>
 
-    <string name="photo_uri">com.advanced.education.admin.wisel.fileprovider</string>
-    <string name="marquee_sample_text">Welcome to 100Cent! We create simple technological solutions to make teaching and learning easier and hassle free.</string>
+    <string name="photo_uri">com.arvind.linebalancing.fileprovider</string>
+    <string name="marquee_sample_text">Welcome to Line Balancing! We create simple technological solutions to make managing easier and hassle free.</string>
+
+    <string name="connect_machine_operation"><![CDATA[Connect - Machine & Operation]]></string>
+    <string name="connect_employee_operation"><![CDATA[Connect - Employee & Operation]]></string>
+    <string name="connect_employee_machine"><![CDATA[Connect - Employee & Machine]]></string>
+    <string name="connect_line_executive"><![CDATA[Connect - Line & Executive]]></string>
+    <string name="connect_line_supervisor"><![CDATA[Connect - Line & Supervisor]]></string>
+    <string name="connect_line_employee"><![CDATA[Connect - Line & Employee]]></string>
 
 </resources>

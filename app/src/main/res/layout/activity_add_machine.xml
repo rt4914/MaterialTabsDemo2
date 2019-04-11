@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteBackground"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whiteBackground"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:onClick="backButtonClicked"
+                android:padding="16dp"
+                android:src="@drawable/ic_arrow_back_accent_24dp" />
+
+            <TextView
+                android:id="@+id/tvTitleLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="16dp"
+                android:text="Add Machine"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/headline_text_size_regular" />
+
+            <ImageView
+                android:id="@+id/ivSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:onClick="saveButtonClicked"
+                android:padding="16dp"
+                android:src="@drawable/ic_done_accent_24dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvBasicDetailsLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whiteLightBackground"
+            android:padding="16dp"
+            android:text="Basic details"
+            android:textColor="@color/textDarkSecondary"
+            android:textSize="@dimen/body1_text_size_regular" />
+
+        <TextView
+            android:id="@+id/tvMachineNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Machine Name *"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/body1_text_size_regular" />
+
+        <EditText
+            android:id="@+id/etMachineName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/transparent"
+            android:hint="Enter machine name"
+            android:inputType="textCapWords"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/textDarkPrimary"
+            android:textColorHint="@color/textDarkSecondary"
+            android:textSize="@dimen/subheading_text_size_regular" />
+
+        <TextView
+            android:id="@+id/tvAssignedNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Assigned Name *"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/body1_text_size_regular" />
+
+        <EditText
+            android:id="@+id/etAssignedName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/transparent"
+            android:hint="Enter assigned name"
+            android:inputType="textCapWords"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/textDarkPrimary"
+            android:textColorHint="@color/textDarkSecondary"
+            android:textSize="@dimen/subheading_text_size_regular" />
+
+        <TextView
+            android:id="@+id/tvShortNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Short Name *"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/body1_text_size_regular" />
+
+        <EditText
+            android:id="@+id/etShortName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/transparent"
+            android:hint="Enter short name"
+            android:inputType="textCapWords"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/textDarkPrimary"
+            android:textColorHint="@color/textDarkSecondary"
+            android:textSize="@dimen/subheading_text_size_regular" />
+
+        <TextView
+            android:id="@+id/tvMachineIndexLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Machine Index *"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/body1_text_size_regular" />
+
+        <EditText
+            android:id="@+id/etMachineIndex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/transparent"
+            android:hint="Enter machine index"
+            android:inputType="textCapWords"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/textDarkPrimary"
+            android:textColorHint="@color/textDarkSecondary"
+            android:textSize="@dimen/subheading_text_size_regular" />
+
+        <TextView
+            android:id="@+id/tvOperationLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Operation *"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/body1_text_size_regular" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvOperation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/transparent"
+            android:textSize="@dimen/subheading_text_size_regular" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackgroundBorderless"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Time"
+        android:layout_gravity="right"
+        android:textColor="@color/textDarkPrimary"
+        android:textSize="@dimen/caption_text_size_regular" />
+
+    <TextView
+        android:id="@+id/tvEmployeeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Employee 1"
+        android:textColor="@color/textDarkPrimary"
+        android:textSize="@dimen/headline_text_size_regular" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvLineLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:text="Line: "
+            android:textColor="@color/textDarkPrimary"
+            android:textSize="@dimen/subheading_text_size_regular" />
+
+        <TextView
+            android:id="@+id/tvLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="in Sewing"
+            android:textColor="@color/textDarkSecondary"
+            android:textSize="@dimen/subheading_text_size_regular" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvMachineLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:text="Machine: "
+            android:textColor="@color/textDarkPrimary"
+            android:textSize="@dimen/subheading_text_size_regular" />
+
+        <TextView
+            android:id="@+id/tvMachine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="in Sewing"
+            android:textColor="@color/textDarkSecondary"
+            android:textSize="@dimen/subheading_text_size_regular" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvOperationLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="Operation: "
+            android:textColor="@color/textDarkPrimary"
+            android:textSize="@dimen/subheading_text_size_regular" />
+
+        <TextView
+            android:id="@+id/tvOperation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="in Sewing"
+            android:textColor="@color/textDarkSecondary"
+            android:textSize="@dimen/subheading_text_size_regular" />
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/vDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider" />
+
+</LinearLayout>

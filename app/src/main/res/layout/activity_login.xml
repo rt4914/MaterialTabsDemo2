@@ -39,7 +39,8 @@
                 android:onClick="nextLabelClicked"
                 android:padding="16dp"
                 android:text="Next"
-                android:textColor="@color/colorAccent" />
+                android:textColor="@color/colorAccent"
+                android:drawableEnd="@drawable/ic_arrow_forward_accent_24dp" />
 
         </LinearLayout>
 
@@ -51,18 +52,18 @@
             android:padding="8dp">
 
             <TextView
-                android:id="@+id/tvPhoneNumberLabel"
+                android:id="@+id/tvEmailLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="16dp"
-                android:text="Phone number"
+                android:text="Email Address *"
                 android:textColor="@color/colorAccent" />
 
             <EditText
-                android:id="@+id/etPhoneNumber"
+                android:id="@+id/etEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
@@ -70,8 +71,8 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="8dp"
                 android:background="@android:color/transparent"
-                android:hint="Enter 10 digit phone number"
-                android:inputType="number"
+                android:hint="Enter email address"
+                android:inputType="textEmailAddress"
                 android:paddingBottom="8dp"
                 android:paddingTop="8dp"
                 android:textColor="@color/colorPrimary"
@@ -85,7 +86,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="16dp"
-                android:text="Password"
+                android:text="Password *"
                 android:textColor="@color/colorAccent" />
 
             <EditText

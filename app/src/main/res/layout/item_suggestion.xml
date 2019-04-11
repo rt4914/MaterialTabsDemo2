@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackgroundBorderless"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
+            android:textDirection="locale"
+            android:textAlignment="viewEnd"
+            android:text="Time"
+            android:textColor="@color/textDarkPrimary"
+            android:textSize="@dimen/caption_text_size_regular"
+            android:gravity="end" />
+
+        <ImageView
+            android:id="@+id/ivSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/ic_done_accent_24dp"
+            android:textColor="@color/textDarkPrimary"
+            android:textSize="@dimen/caption_text_size_regular" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvAssignedEmployeeNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="4dp"
+            android:text="Assigned Emp.: "
+            android:textColor="@color/textDarkPrimary"
+            android:textSize="@dimen/body1_text_size_regular" />
+
+        <TextView
+            android:id="@+id/tvAssignedEmployeeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="4dp"
+            android:textColor="@color/textDarkPrimary"
+            android:textSize="@dimen/subheading_text_size_regular" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvAbsentEmployeeNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="4dp"
+            android:text="Absent Emp.: "
+            android:textColor="@color/textDarkPrimary"
+            android:textSize="@dimen/body1_text_size_regular" />
+
+        <TextView
+            android:id="@+id/tvAbsentEmployeeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/textDarkPrimary"
+            android:textSize="@dimen/subheading_text_size_regular" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvLineLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="4dp"
+                android:text="Line: "
+                android:textColor="@color/textDarkPrimary"
+                android:textSize="@dimen/body1_text_size_regular" />
+
+            <TextView
+                android:id="@+id/tvLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/textDarkSecondary"
+                android:textSize="@dimen/body1_text_size_regular" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvLineEfficiencyLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="4dp"
+                android:text="Efficiency: "
+                android:textColor="@color/textDarkPrimary"
+                android:textSize="@dimen/body1_text_size_regular" />
+
+            <TextView
+                android:id="@+id/tvLineEfficiency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/textDarkSecondary"
+                android:textSize="@dimen/body1_text_size_regular" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvMachineLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="Machine: "
+                android:textColor="@color/textDarkPrimary"
+                android:textSize="@dimen/body1_text_size_regular" />
+
+            <TextView
+                android:id="@+id/tvMachine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:textColor="@color/textDarkSecondary"
+                android:textSize="@dimen/body1_text_size_regular" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvOperationLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="Operation: "
+                android:textColor="@color/textDarkPrimary"
+                android:textSize="@dimen/body1_text_size_regular" />
+
+            <TextView
+                android:id="@+id/tvOperation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/textDarkSecondary"
+                android:textSize="@dimen/body1_text_size_regular" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider" />
+
+</LinearLayout>

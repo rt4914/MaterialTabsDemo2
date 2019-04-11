@@ -2,26 +2,25 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:layout_marginLeft="8dp"
     android:layout_marginRight="8dp"
-    >
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/rounded_custom_pop_up_top"
-        android:orientation="horizontal"
         android:gravity="center"
+        android:orientation="horizontal"
         android:padding="8dp">
 
         <TextView
             android:id="@+id/tvAddOptionLabel"
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:padding="8dp"
             android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="8dp"
             android:text="Select Option"
             android:textColor="@color/white"
             android:textSize="@dimen/subheading_text_size_regular" />
@@ -32,18 +31,17 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:padding="8dp"
-            android:src="@drawable/ic_close_white_24dp"
-            />
+            android:src="@drawable/ic_close_white_24dp" />
 
     </LinearLayout>
 
     <TextView
-        android:id="@+id/tvAddCourse"
+        android:id="@+id/tvAddStitch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
         android:padding="16dp"
-        android:text="Add Course"
+        android:text="Add Stitch"
         android:textColor="@color/textDarkPrimary"
         android:textSize="@dimen/subheading_text_size_regular" />
 
@@ -53,12 +51,12 @@
         android:background="@color/divider" />
 
     <TextView
-        android:id="@+id/tvAddStandard"
+        android:id="@+id/tvAddMachine"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/whiteLightBackground"
         android:padding="16dp"
-        android:text="Add Standard"
+        android:text="Add Machine"
         android:textColor="@color/textDarkPrimary"
         android:textSize="@dimen/subheading_text_size_regular" />
 
@@ -68,12 +66,43 @@
         android:background="@color/divider" />
 
     <TextView
-        android:id="@+id/tvAddStudent"
+        android:id="@+id/tvAddOperation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whiteBackground"
+        android:padding="16dp"
+        android:text="Add Operation"
+        android:textColor="@color/textDarkPrimary"
+        android:textSize="@dimen/subheading_text_size_regular" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider" />
+
+    <TextView
+        android:id="@+id/tvAddLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whiteLightBackground"
+        android:padding="16dp"
+        android:text="Add Line"
+        android:textColor="@color/textDarkPrimary"
+        android:textSize="@dimen/subheading_text_size_regular" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider" />
+
+
+    <TextView
+        android:id="@+id/tvAddEmployee"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
         android:padding="16dp"
-        android:text="Add Student"
+        android:text="Add Employee"
         android:textColor="@color/textDarkPrimary"
         android:textSize="@dimen/subheading_text_size_regular" />
 
@@ -83,28 +112,28 @@
         android:background="@color/divider" />
 
     <TextView
-        android:id="@+id/tvAddTeacher"
+        android:id="@+id/tvAddDesignation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp"
         android:background="@color/whiteLightBackground"
-        android:text="Add Teacher"
+        android:padding="16dp"
+        android:text="Add Designation"
         android:textColor="@color/textDarkPrimary"
         android:textSize="@dimen/subheading_text_size_regular" />
-
-    <View
+ <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/divider" />
 
     <TextView
-        android:id="@+id/tvCreateNewSession"
+        android:id="@+id/tvAddConnection"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp"
-        android:text="Create New Session"
         android:background="@drawable/rounded_custom_pop_up_bottom"
+        android:padding="16dp"
+        android:text="Add Connection"
         android:textColor="@color/textDarkPrimary"
         android:textSize="@dimen/subheading_text_size_regular" />
+
 
 </LinearLayout>

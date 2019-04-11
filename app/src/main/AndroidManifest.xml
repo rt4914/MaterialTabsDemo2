@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.advanced.education.admin.wisel">
+    package="com.arvind.linebalancing">
 
     <uses-feature
         android:name="android.hardware.camera.any"
@@ -19,12 +19,45 @@
     <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
+        android:name=".utilities.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activity.connection.AddConnectionActivity"></activity>
+        <activity android:name=".activity.EmployeeSuggestionListActivity" />
+        <activity android:name=".activity.connection.EmployeeMachineMapActivity" />
+        <activity android:name=".activity.connection.EmployeeOperationMapActivity" />
+        <activity android:name=".activity.connection.MachineOperationMapActivity" />
+
+        <service
+            android:name=".serverutilities.GetLineDataService"
+            android:enabled="true"
+            android:exported="true" />
+        <service android:name=".serverutilities.GetDesignationDataService" />
+        <service android:name=".serverutilities.GetEmployeeDataService" />
+        <service android:name=".serverutilities.GetMachineDataService" />
+        <service android:name=".serverutilities.GetOperationDataService" />
+        <service android:name=".serverutilities.GetStitchDataService" />
+        <service android:name=".serverutilities.GetEmployeeRatingDataService" />
+        <service android:name=".serverutilities.GetMachineOperationDataService" />
+        <service android:name=".serverutilities.GetEmployeeMachineDataService" />
+        <service android:name=".serverutilities.GetEmployeeOperationDataService" />
+        <service android:name=".serverutilities.GetLineExecutiveDataService" />
+        <service android:name=".serverutilities.GetLineSupervisorDataService" />
+        <service android:name=".serverutilities.GetLineEfficiencyDataService" />
+        <service android:name=".serverutilities.GetLineEmployeeDataService" />
+        <service android:name=".serverutilities.GetConnectionDataService" />
+        <service android:name=".serverutilities.GetSuggestionDataService" />
+
+        <activity
+            android:name=".activity.line.LineListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.line.AddLineActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activity.MainActivity"
             android:screenOrientation="portrait">
@@ -37,44 +70,6 @@
         <activity
             android:name=".activity.LoginActivity"
             android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.AddCourseActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.AddStandardActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.AddTeacherActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.AddStudentActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.SelectMediaActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.Transparent" />
-        <activity
-            android:name=".activity.SelectCourseActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.SelectStandardActivity"
-            android:screenOrientation="portrait" />
-        <activity android:name=".activity.CourseListActivity" />
-        <activity
-            android:name=".activity.SelectTeacherActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.StandardListActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.StudentListActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.TeacherListActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.SelectStudentActivity"
-            android:screenOrientation="portrait" />
 
         <provider
             android:name="android.support.v4.content.FileProvider"
@@ -86,8 +81,60 @@
                 android:resource="@xml/file_paths" />
         </provider>
 
-        <activity android:name=".activity.SelectAccessRightsActivity" />
-        <activity android:name=".activity.BannerListActivity"></activity>
+        <activity
+            android:name=".activity.stitch.AddStitchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.operation.AddOperationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.machine.AddMachineActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.designation.AddDesignationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.employee.AddEmployeeRatingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.employee.AddEmployeeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.designation.SelectDesignationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.employee.SelectEmployeeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.operation.OperationListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.designation.DesignationListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.employee.EmployeeListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.machine.MachineListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.stitch.StitchListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.employee.EmployeeRatingListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.operation.SelectOperationActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.machine.SelectMachineActivity" />
+        <activity android:name=".activity.connection.LineExecutiveMapActivity" />
+        <activity android:name=".activity.line.SelectLineActivity" />
+        <activity android:name=".activity.connection.LineSupervisorMapActivity" />
+        <activity android:name=".activity.line.AddLineEfficiencyActivity" />
+        <activity android:name=".activity.connection.LineEmployeeMapActivity" />
+        <activity android:name=".activity.employee.EmployeeConnectionListActivity" />
+        <activity android:name=".activity.ViewSuggestionActivity" />
+        <activity android:name=".activity.connection.ConnectionListActivity" />
     </application>
 
 </manifest>

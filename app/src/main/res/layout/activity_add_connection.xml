@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteBackground"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whiteBackground"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="16dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:onClick="backButtonClicked"
+                android:src="@drawable/ic_arrow_back_accent_24dp" />
+
+            <TextView
+                android:id="@+id/tvTitleLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="16dp"
+                android:text="Add Connection"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/headline_text_size_regular" />
+
+            <ImageView
+                android:id="@+id/ivSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="16dp"
+                android:onClick="saveButtonClicked"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_done_accent_24dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvBasicDetailsLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whiteLightBackground"
+            android:padding="16dp"
+            android:text="Basic details"
+            android:textColor="@color/textDarkSecondary"
+            android:textSize="@dimen/body1_text_size_regular" />
+
+        <TextView
+            android:id="@+id/tvEmployeeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Employee *"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/body1_text_size_regular" />
+
+        <TextView
+            android:id="@+id/tvSelectEmployee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@android:color/transparent"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="Select Employee"
+            android:textColor="@color/textDarkPrimary"
+            android:textColorHint="@color/textDarkSecondary"
+            android:textSize="@dimen/subheading_text_size_regular" />
+
+        <TextView
+            android:id="@+id/tvLineLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Line *"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/body1_text_size_regular" />
+
+        <TextView
+            android:id="@+id/tvSelectLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@android:color/transparent"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="Select Line"
+            android:textColor="@color/textDarkPrimary"
+            android:textColorHint="@color/textDarkSecondary"
+            android:textSize="@dimen/subheading_text_size_regular" />
+
+        <TextView
+            android:id="@+id/tvMachineLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Machine *"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/body1_text_size_regular" />
+
+        <TextView
+            android:id="@+id/tvSelectMachine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/transparent"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="Select Machine"
+            android:textColor="@color/textDarkPrimary"
+            android:textColorHint="@color/textDarkSecondary"
+            android:textSize="@dimen/subheading_text_size_regular" />
+
+        <TextView
+            android:id="@+id/tvOperationLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Operation *"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/body1_text_size_regular" />
+
+        <TextView
+            android:id="@+id/tvSelectOperation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/transparent"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="Select Operation"
+            android:textColor="@color/textDarkPrimary"
+            android:textColorHint="@color/textDarkSecondary"
+            android:textSize="@dimen/subheading_text_size_regular" />
+
+        <TextView
+            android:id="@+id/tvTimeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Time *"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/body1_text_size_regular" />
+
+        <TextView
+            android:id="@+id/tvSelectTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/transparent"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="Select Time"
+            android:textColor="@color/textDarkPrimary"
+            android:textColorHint="@color/textDarkSecondary"
+            android:textSize="@dimen/subheading_text_size_regular" />
+
+    </LinearLayout>
+
+</ScrollView>
